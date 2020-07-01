@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html lang="ja">
+  <head>	 
+   <meta charset="UTF-8">
+   <script src= "https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <script>
+	 function plus(a,b)
+         {
+		 return a + b;
+         }
+         console.log(plus(1,1));
+        
+        var minus = function(a,b)
+        {
+		return a - b;
+        }
+        console.log(minus(100,1));
+        
+       var logging = function(value)
+       {
+	       console.log('ログインしました');
+       };
+       
+      (function()
+      {
+	      console.log('not called');
+      });
+      
+      (function()
+      {
+	      console.log('not called');
+      })
+      
+      (function()
+      {
+              console.log('called');
+      });
+
+       window.oneforeunload = function()
+       {
+	       return'';
+       };
+        var exec = function(func)
+        {
+		func()
+        };
+       exec(logging);
+    </script>
+  </body>
+</html>
