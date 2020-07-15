@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8" />
+   <title>2-5html</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+  <script>
+   var list = [5,3,1,2,4];
+   
+    for(var i = 0; i < list.length; i++)
+    {
+	    console.log((i+1) + '番目の数は'+ list[i] + 'です');
+    } 
+    
+    list.forEach((value,i)=>console.log( (i+1) + '番目の数値は' + value +'です'));
+   
+    list.sort().forEach((value,i)=>( (i+1) +'番目の数値は'+ value +'です'));
+  </script>
+ </body>
+</html>

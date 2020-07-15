@@ -1,33 +1,35 @@
-<html>
- <head>
-   <meta charset="UTF-8">
-   <script src= "https://cdn.jsdelivr.net/npm/vue"></script>
- </head>
- <body>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+   <meta charset="UTF-8" />
+    <title>2-4html</title>
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
   <script>
-    var param;
+	 var param;
+         if (param) {
+		 console.log("初期化されていないため、実行されない");
+	 }
+         param = null;
+         
+         if (param){
+		 console.log("nullはfalseとみなされるため実行されない")
+	 }
+         
+        if(0) {
+		console.log("0はfalseとみなされるため実行されない");
+	}
 
-      if (param){
-	    console.log("初期化されてないため実行不可能です");
-      }
+         param="set";
 
-     param = null;
+        if (param){
+		console.log("paramに文字列が設定されています");
+	}
 
-      if(param){
-	      console.log("nullはfalseとみなされるため実行されない");
-      }
-      if(0){
-	     console.log("0はfalseとみなされるため実行されない");
-      }
-      if(""){
-	     console.log("空文字はfalseとみなされるため、実行されない");
-      }
+     console.log("aaa"&&"bbb");
+     console.log("aaa"||"bbb");
+     console.log (0 || "ccc");
 
-      param = "set";
-
-      if(param) {
-	      console.log("paramに文字列が設定されています");
-      }
   </script>
- </body>
-</html>
+</html>   
