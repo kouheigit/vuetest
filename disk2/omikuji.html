@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <title>2-16html</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+   <button class="button" id="button">クリック</button>
+   <div id="result"></div>
+   <script>
+	   var button = document.getElementById('button');
+           var result = document.getElementById('result');
+           var omikuji = ['大吉','吉','凶'];
+         
+           button.addEventListener('click',function() {
+
+		   var index = Math.floor(Math.random() * omikuji.length);
+                   var p = document.createElement('p');
+		   p.appendChild(document.createTextNode('結果は………[' + omikuji[index] + ']です!'));
+		   
+		   result.textContent = null;
+		   result.appendChild(p);
+		   button.textContent = 'おみくじをもう一度引く';
+		   });
+   </script>
+ </body>
+</html>
+

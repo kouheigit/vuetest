@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <title>2-16html</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+   <script>
+	   function creat(sei,mei){
+		   return {
+			   name: mei + ' ' + sei,
+			   address: 'tokyo-to'
+		   };
+	    }
+           
+           var allow_create = (sei,mei) => ({
+		   name: mei + ' ' + sei,
+		   address: 'tokyo-to'
+	   });
+/*
+        console.log(create('junpei','hamazaki'));
+        {
+		name"junpei hamazaki",address"tokyo-to"
+	}*/
+         
+       console.log(allow_create('hikaru','saito'));
+       {
+	       name"saito hikaru",address"kagawa"
+       }
+        
+   </script>
+ </body>
+</html>
+

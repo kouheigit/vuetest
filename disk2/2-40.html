@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+   <meta charset="UTF-8" />
+    <title>2-40html</title>
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="ancestor" class="box root blue ancestor">
+     <div id="parent" class="box red parent">
+	<a id="child" href="#">click</a>
+     </div>
+    </div>
+  <script>
+	  var ancestor = document.getElementById('ancestor');
+          var parent = document.getElementById('parent');
+          var child = document.getElementById('child');
+        
+          ancestor.addEventListener('child',() => console.log('祖先がクリックされました'));
+          parent.addEventListener('click',() => console.log('親がクリックされました'));
+          child.addEventListener('click',() => console.log('子がクリックされました'));
+  </script>
+</html>

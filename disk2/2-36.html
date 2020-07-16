@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8" />
+   <title>2-36.html</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>	 
+	 <h2>3文字以上入力して下さい</h2>
+	 <p>
+	   <input id="field" type="text" name="namae"size="40" maxlength="20">
+	 </p>
+         <div id="result"></div>
+   <script>
+	   var field = document.getElementById('field');
+           var result = document.getElementById('result');
+         
+           field.addEventListener('focus',function(){
+		   field.style.background = '#DDFFFF';
+		   result.textContent = null;
+		  });
+ 
+          field.addEventListener('blur',function () {
+          
+          field.style.background = null;
+          field.style.length 
+     
+   </script>
+ </body>
+</html>
+~         

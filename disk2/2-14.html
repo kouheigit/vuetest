@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8" />
+   <title>2-12.html</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+   <script>
+           function logging(text)
+           {
+		   console.log(text);
+           };
+           
+          var allow1_logging = (text) => {
+		  console.log(text);
+	  };
+         
+          var allow2_logging = text => {
+		  console.log(text);
+          };
+ 
+          logging('test');
+          allow1_logging('test2');
+          allow2_logging('test3');
+   </script>
+ </body>
+</html>
+~       

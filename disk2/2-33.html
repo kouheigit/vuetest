@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8" />
+   <title>2-33.html</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+   <input id ="field" type="text" name="namae" size="40" maxlength="20">
+   <script>
+	   var field = document.getElementById('field');//inputから値を取得してくる
+           
+           field.addEventListener('keyup', function() {
+		   var i = field.value.length;//変数の中に格納できる
+		   if(i < 20){
+	         	   console.log(i + '文字入力してます.....');
+	           }else{
+			   console.log('20文字以上が入力されました');
+		 }
+	   });
+   </script>
+ </body>
+</html>
+

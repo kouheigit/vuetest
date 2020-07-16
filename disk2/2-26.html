@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8" />
+   <title>2-26.html</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+   <button class="button" id="button">クリック</button>
+   <div id="result"></div>
+   <script>
+	   var button = document.getElementById('button');//イベントを設定する要素を取得
+           var result = document.getElementById('result');//結果を表示するエリアを取得
+           var count = 0;//クリックカウンター
+          
+         button.addEventListener('click',function() {
+		 result.textContent = 'ボタンを' + ++count +'回クリックしました';
+	 });
+   </script>
+ </body>
+</html>
+

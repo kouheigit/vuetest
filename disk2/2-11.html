@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8" />
+   <title>2-11.html</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+   <script>
+           function showAlert()
+           {
+		   alert('alert');
+           };
+             
+           function delayedAlert(duration = 2000)
+           {
+		   setTimeout(showAlert,duration);
+           }
+           
+           delayedAlert();
+           {
+		   setTimeout(showAlert,duration);
+	   }
+             
+           delayedAlert();
+           delayedAlert(10000);
+           delayedAlert(0);
+   </script>
+ </body>
+</html>
