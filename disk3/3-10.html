@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+   <meta charset="UTF-8">
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <div id="app">
+   <p>本日は{{ date.getFullYear() }}年{{ date.getMonth() + 1 }} 月 {{ date.getDate() }}日です</p>
+   <p>料金は{{ Number(price).toLocaleString() }}円になります。</p>
+  </div>
+
+ <script>
+    new Vue({
+	    el: '#app',
+	     data: {
+	      date: new Date(),
+		     price: 10000
+	      }
+	   });
+  </script>
+</html>
