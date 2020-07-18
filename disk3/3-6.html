@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html lang="ja">
+  <head>
+   <meta charset="UTF-8">
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+  <div id="app1">
+     {{ message1 }}
+  </div>
+  <div id="app2">
+     {{ message2 }}
+  </div>
+  <div id="app3">
+     {{ message3 }}
+  </div>
+  <script>
+     new Vue({
+	     el: "#app1",//id = "app1"に展開する"
+	     data : {
+	      message1: "Vueアプリケーションその１"
+	      }
+	   });
+     new Vue({
+	     el:"#app2",//id = "app2に展開する"
+	     data: {
+	      message2: "Vueアプリケーションその２"
+	     }
+	  });
+       new Vue({
+	       el:"#app3",
+	       data: { 
+		message3: "Vueアプリケーションその３"
+	       }
+	    });
+   </script>
+</html>
