@@ -11,28 +11,32 @@
       <img :id="images[0].id":src="images[0].src" class="image" :alt="images[0].alt":width="images[0].width"/>
      </li>
      <li>
-      <img :id="images[1].id":src="images[1].src" class="image" :alt="images[1].alt":width="images[1].width"/>
+      <img :id="images[1].id" :src="images[1].src" class="image" :alt="images[1].alt" :width="images[1].width"/>
      </li>
     <li>
-      <img :id="images[2].id":src="images[2].src" class="image" :alt="images[2].alt":width="images[2].width"/>
+      <img :id="images[2].id" :src="images[2].src" class="image"  :alt="images[2].alt" :width="images[2].width"/>
      </li>
+  </div>
   <script>
 	  new Vue({
 	    el: "#app",
 	     data: {
 	       images: [
 		 {
-	            id:"..img/sample1.jpg",
+		    id: "image1",
+	            src:"../img/sample1.jpg",
 	            alt: "画像１です",
 	            width:"200"
 	         },
-	        {
-			id:"..img/sample2.jpg",
+	         {
+			id:"image2",
+			src:"../img/sample2.jpg",
 			alt:"画像２です",
 			width:"200"
 	         },
 		{
-		        id:"..img/intiki.jpg",
+			id:"image3",
+		        src:"../img/intiki.jpg",
 			alt:"インチキ立花",
 			width:"50"
 		}

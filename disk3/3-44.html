@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="UTF-8">
+  <title>3-44</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+  <body>
+    <div id="app">
+      <ul>
+	<li v-for="(value,key,index) in book" :key="index">
+	   {{ key }} : {{ value }}
+	</li>
+      </ul>
+    </div>
+    <script> 
+      new Vue({
+        el: "#app",
+	  data: {
+           book: {
+	     title:"七人の侍",
+	     author:"黒澤明",
+	     time:207,
+	     film:"東映",
+	     date:"1954.4.26"
+	    }
+          }
+	});
+    </script>
+   </body>
+</html>
