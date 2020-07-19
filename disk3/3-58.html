@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8" />
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+  <div id="app">
+    <button data-hello="私は斎藤光です"class="button" v-on:click="hello">
+    <button data-hello="私は浜崎順平です"class="button" v-on:click="hello">
+    <button data-hello="私は立花孝志です"class="button" v-on:clock="hello">
+  </div>
+ <script>
+      methods:{
+       hello(e){
+         console.log(e);
+	    alert(e.target.dataset.hello);
+	  }
+      }
+ </script>

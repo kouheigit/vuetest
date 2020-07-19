@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8" />
+   <title>2-11.html</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+  <div id ="app">
+    <button class="button" v-on:click="toggle">
+    <p v-show="isActive">アクティブです!</p>
+  </div>
+  <script>
+     new Vue({
+       el: "#app",
+        data: {
+         isActive: true
+        },
+	 methods: {
+          toggle: function() {
+	   this.isActive = !this.isActive;
+	}
+      }
+   });
+  </script>
+ </body>
+</html>
+

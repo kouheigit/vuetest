@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8" />
+   <title>3-57html</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+  <div id="app">
+   <button data-hello="私は斎藤光です"class="button" v-on:click="hello">
+    button1
+   </button>
+   <button data-hello="私は浜崎順平です"class="button"v-on:click="hello">
+    button2
+   </button>
+   <button data-hello="私は前澤友作です"class="button"v-on:click="hello"> 
+    button3
+   </button>
+  </div>
+   <script>
+     new Vue({
+	el:"#app",
+	  data: {
+	    methods: {
+	      hello(e){
+		console.log(e);
+                 alert(e.target.dataset.hello);
+		 }
+	      }
+            }
+	 });
+  </script>
+ </body>
+</html>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <title>3-81</title>
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+ </head>
+ <body>
+ <div id="app">
+   <input type="checkbox" value="もも" v-model="fruits">
+   <label for="もも">もも</label>
+   <input type="checkbox" value="りんご" v-model="fruits">
+   <label for="りんご">りんご</label>
+   <input type="checkbox" value="みかん" v-model="fruits">
+   <label for="みかん">もも</label>
+ </div>
+ <script>
+    new Vue({
+     el: "#app",
+       data: {
+	       selected: null
+	     }
+	 });
+ </script>
+   
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+ <body>
+  <div id="app">
+    <button class="button" v-on:click="logging('hoge')">hoge</button>
+    <button class="button" v-on:click="logging('fuga')">fuga</button>
+    <button class="button" v-on:click="logging('piyo')">hoge</button>
+  </div>
+  <script>
+   new Vue({
+     el: "#app",
+      methods: {
+	logging(param){
+          console.log("入力引数は"+ param +"です");
+	}
+      }
+    });
+  </script>
+ </body>
+</html>
